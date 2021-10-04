@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PublicController!{% endblock %}
+
+
+{% block body %}
+    <!-- Pakt onze heading -->
+{#    <link rel="text/stylesheet"> ">#}
+
+{#    <link rel="stylesheet" href="{{ asset('css/parts/HeadingStyle.css') }}">#}
+
+{#    <link rel="stylesheet" href="{{ asset('css/parts/HeadingStyle.css') }}">#}
+
+{#    {% include 'parts/headingParts.html.twig' %}#}
+
+
+    <div class="jumbotron">
+        <h1 class="display-4"> {{ hello }}</h1>
+        <p class="lead">welkom bij halal dating inc hier kan je halal manier virouw zoeken.</p>
+        <hr class="my-4">
+        <p>deze pagina is de index abi</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href=" {{ path('app_register') }}" role="button"> Registreer mij</a>
+            <a class="btn btn-primary btn-success" href=" {{ path('app_login') }}" role="button">Login pagina </a>
+
+        </p>
+    </div>
+{% endblock %}

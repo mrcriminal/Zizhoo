@@ -1,0 +1,21 @@
+body {
+    box-sizing: border-box;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+input {
+    margin-bottom:10px;
+}
+
+.form-check {
+    position: absolute;
+    display: inline;
+    padding-top: 25px;
+}
+.btn {
+    margin-top: 25px;
+}

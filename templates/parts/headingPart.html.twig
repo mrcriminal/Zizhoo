@@ -1,0 +1,88 @@
+<header>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+    <style>
+
+
+
+        .navbar-toggle .icon-bar {
+            background-color: #fff;
+        }
+
+        .navbar-brand {
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: 2vw;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .nav-link:hover{
+            color: #FFFFFF;
+
+        }
+        .nav-link{
+            color: #FFFFFF;
+            margin-left: 100px;
+            font-weight: bold;
+            font-family: 'Karantina', cursive;
+            font-size: 2vw;
+        }
+
+
+
+
+        @media (min-width: 300px) and (max-width: 1199.98px) {
+            .nav-link {
+                font-size: 3vw;
+                /*margin: 0px;*/
+                paddin: 0px;
+                margin-left: 100px;
+
+            }
+            a {
+                /*font-size: 3vw;*/
+            }
+        }
+
+    </style>
+
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #49abd5;">
+
+        <!--  Show this only on mobile to medium screens  -->
+        <a class="navbar-brand d-none d-lg-block navbar-nav" href="#" style="margin-left: 3vw; color: #FFF;">
+            <img src="{{ asset('img/logo.png') }}" width="35%">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: #FFFFFF"> <i> Clickable </i></span>
+        </button>
+
+        <!--  Use flexbox utility classes to change how the child elements are justified  -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Actie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Prijzen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tell a friend</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
